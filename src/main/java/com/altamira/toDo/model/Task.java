@@ -28,8 +28,7 @@ public class Task {
 
     private Integer estimatedWorkTime;
 
-    @Column(columnDefinition = "boolean default false")
-    private Boolean isFinished;
+    private Boolean isFinished = false;
 
     @Nullable
     private Integer actualWorkTime;
