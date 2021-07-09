@@ -34,7 +34,6 @@ public class TaskController {
 
     @PostMapping("/finish")
     public void finishTask(@RequestBody Task details) {
-        System.out.println("here" + details);
         taskService.finishTask(details.getFinishedOn(), details.getActualWorkTime(), details.getId());
     }
 
